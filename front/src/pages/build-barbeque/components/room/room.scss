@@ -1,0 +1,23 @@
+.room-container{
+
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+
+    .room{
+        cursor: pointer;
+        transition: 0.3s;
+
+        img{
+            max-width: 100%;
+            height: auto;   
+            display: block;
+        }
+
+        &:hover{
+            transform: scale(1.04);
+        }
+    }
+
+}
