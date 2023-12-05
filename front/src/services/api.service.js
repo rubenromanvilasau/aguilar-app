@@ -7,15 +7,11 @@ class apiService {
     }
 
     async get(endpoint) {
-        const response = await axios(`${this.url}/${endpoint}`);
-        const data = await response.json();
-        return data;
+        return axios(`${this.url}/${endpoint}`)
     }
 
-    async post(endpoint, data) {
-        const response = await axios.post(`${this.url}/${endpoint}`, data);
-        const responseData = await response.json();
-        return responseData;
+    async creatUser( data ) {
+        return axios.post(`${this.url}/users`, data);
     }
 
 }

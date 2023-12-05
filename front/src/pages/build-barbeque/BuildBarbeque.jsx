@@ -3,7 +3,6 @@ import { Room } from "./components/room/Room";
 import { Environment } from "./components/environment/Environment";
 import './build-barbeque.scss';
 
-
 const stepTitles = {
     0: 'espacio',
     1: 'terminación',
@@ -14,6 +13,9 @@ export const BuildBarbeque = () => {
     const [budget, setBudget] = useState( 8000000 );
     const [currentStep, setCurrentStep] = useState(0);
     const [room, setRoom] = useState( null );
+    const [wallsColor, setWallsColor] = useState( null );
+    const [floorColor, setFloorColor] = useState( null );
+    const [roofColor, setRoofColor] = useState( null );
 
     useEffect(() => {
         console.log('room', room);
@@ -30,7 +32,7 @@ export const BuildBarbeque = () => {
                 <span className="step-title">{stepTitles[currentStep]}</span>
             </div>
             { currentStep === 0 && <Room setRoom={setRoom} nextStep={nextStep} /> }
-            { currentStep === 1 && <Environment /> }
+            { currentStep === 1 && <Environment setWallsColor={setWallsColor} setRoofColor={setRoofColor} setFloorColor={setFloorColor} nextStep={nextStep}/> }
             <div className="budget-container">
                 <div className="budget">
                     <span>Presupuesto: {budget.toLocaleString('es-cl', {currency: 'CLP', style: 'currency'})}</span>

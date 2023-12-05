@@ -1,8 +1,12 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import './home.scss';
 import apiService from '../../services/api.service';
+import { useNavigate } from 'react-router-dom';
 
 export const Home = () => {
+  const navigate = useNavigate();
+  
+  const [error, setError] = useState( { status: false, message: '', input: '' } );
 
   const nameRef = useRef( null );
   const emailRef = useRef( null );
@@ -14,7 +18,31 @@ export const Home = () => {
     const email = emailRef.current.value;
     const phone = phoneRef.current.value;
 
+    if( !validateInputs( { name, email, phone } ) ) return;
+
+    apiService.creatUser( { name, email, phone: phone } ).then( response => {
+      console.log('response', response);
+      navigate('/build');
+    });
+
+
     console.log( 'form', { name, email, phone } );
+  }
+
+  const validateInputs = ( { name, email, phone } ) => {
+    if( !name  ) {
+      setError( { status: true, message: 'Ingrese un nombre', input: 'name' } );
+      return false;
+    }else if( !email ) {
+      setError( { status: true, message: 'Ingrese un email', input: 'email' } );
+      return false;
+    }else if( !phone ) {
+      setError( { status: true, message: 'Ingrese un teléfono', input: 'phone' } );
+      return false;
+    }else{
+      setError( { status: false, message: '', input: '' } );
+      return true;
+    }
   }
 
   return (
@@ -28,8 +56,13 @@ export const Home = () => {
         </div>
         <div className="body">
           <input ref={nameRef} type="text" className="input" placeholder='Nombre' />
+          { error.status && error.input === 'name' && <span className='error'>{ error.message }</span> }
+          
           <input ref={emailRef} type="email" className="input" placeholder='Email'/>
+          { error.status && error.input === 'email' && <span className='error'>{ error.message }</span> }
+          
           <input ref={phoneRef} type="tel" className="input" placeholder='Teléfono de contacto'/>
+          { error.status && error.input === 'phone' && <span className='error'>{ error.message }</span> }
           <button 
             className='participate'
             onClick={ handleSubmit }
