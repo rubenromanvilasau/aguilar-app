@@ -4,7 +4,6 @@ import { ChooseEnvironment } from "./components/choose-environment/ChooseEnviron
 import { ChooseFurniture } from "./components/choose-furniture/ChooseFurniture";
 import { ChooseBarbeque } from "./components/choose-barbeque/ChooseBarbeque";
 import { Loading } from "../../components/index";
-import { Results } from "./components/results-qr/Results";
 import './build-barbeque.scss';
 
 const stepTitles = {
@@ -56,7 +55,6 @@ export const BuildBarbeque = () => {
             { currentStep === 1 && !isLoading && <ChooseEnvironment room={room} decrementBudget={decrementBudget} setEnvironmentColors={setEnvironmentColors} environmentColors={environmentColors} nextStep={nextStep}/> }
             { currentStep === 2 && !isLoading && <ChooseFurniture decrementBudget={decrementBudget} setFurniture={setFurniture} nextStep={nextStep}/> }
             { currentStep === 3 && !isLoading && <ChooseBarbeque decrementBudget={decrementBudget} setBarbeque={setBarbeque}/> }
-            { currentStep === 4 && !isLoading && <Results/> }
 
             { isLoading && <div className="loading-container"><Loading /></div>}
             

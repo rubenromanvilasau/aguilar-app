@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import './choose-barbeque.scss';
 const barbequeOptions = [
     {
@@ -29,14 +29,35 @@ const barbequeOptions = [
 
 export const ChooseBarbeque = ({ setBarbeque, decrementBudget, createImage }) => {
 
+    const canvasRef = useRef( null );
+
     const handleOptionClick = ( furniture ) => {
         setBarbeque( furniture );
+
+        const canvas = canvasRef.current;
+        const ctx = canvas.getContext('2d');
+        const img = new Image();
+        img.src = furniture.image_url;
+        img.onload = () => {
+            ctx.drawImage(img, 0, 0, 200, 200);
+        }
+
         decrementBudget( furniture.price );
     }
 
+    useEffect(() => {
+        const canvas = canvasRef.current;
+        const ctx = canvas.getContext('2d');
+        const img = new Image();
+        img.src = 'img/furniture/furniture.png';
+        img.onload = () => {
+            ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+        }
+    }, [])
+
     return (
         <div className="barbeque-container">
-        <img className='left-image' src="img/furniture/furniture.png" alt="" />
+        <canvas ref={canvasRef} height={500} width={500}/>
         <div className='barbeque-options'>
             { barbequeOptions.map( barbeque => (
                 <img 

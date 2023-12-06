@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react';
 import './choose-furniture.scss';
 
 const furnitureOptions = [
@@ -29,17 +30,40 @@ const furnitureOptions = [
 
 export const ChooseFurniture = ({ setFurniture, decrementBudget, nextStep }) => {
 
+    const canvasRef = useRef( null );
+
     const handleOptionClick = ( furniture ) => {
         setFurniture( furniture );
+
+        const canvas = canvasRef.current;
+        const ctx = canvas.getContext('2d');
+        const img = new Image();
+        img.src = furniture.image_url;
+        img.onload = () => {
+            ctx.drawImage(img, 0, 0, 200, 200);
+        }
+
         decrementBudget( furniture.price );
         nextStep();
     }
 
+    useEffect(() => {
+        const canvas = canvasRef.current;
+        const ctx = canvas.getContext('2d');
+        const img = new Image();
+        img.src = 'img/furniture/furniture.png';
+        img.onload = () => {
+            ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+        }
+    }, [])
+    
+
     return (
         <div className="furniture-container">
-            <img className='left-image' src="img/furniture/furniture.png" alt="" />
+            <canvas width={400} height={400} ref={canvasRef}/>
             <div className='furniture-options'>
                 { furnitureOptions.map( furniture => (
+                    
                     <img 
                         className='furniture-option'
                         key={furniture.id} 

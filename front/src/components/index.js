@@ -1,2 +1,2 @@
 export * from './loading/Loading';
-export * from './canvas/EnvironmentCanvas';
+export * from './environment-canvas/EnvironmentCanvas';
