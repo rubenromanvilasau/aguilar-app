@@ -20,18 +20,28 @@
         z-index: -1; 
     }
 
+    .loading-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // height: 60vh;
+        height: 100%;
+    }
+
     .header{
         margin-left: 3rem;
         .select-text{
             font-size: 22px;
             font-weight: 500;
             margin-top: 1rem;
+            color: white;
         }
     
         .step-title{
             letter-spacing: .3rem;
             font-size: 36px;
             text-transform: uppercase;
+            color: white;
         }
     }
     

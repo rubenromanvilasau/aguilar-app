@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
-import { BuildBarbeque, Home } from './pages/index';
+import { BuildBarbeque, Home, TestPage } from './pages/index';
 
 export const AguilarApp = () => {
 
@@ -12,6 +12,10 @@ export const AguilarApp = () => {
       <Route
         path="/build"
         element={<BuildBarbeque/>}
+      />
+      <Route
+        path="/test"
+        element={<TestPage/>}
       />
     </Routes>
   )
