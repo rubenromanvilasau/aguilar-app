@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ChooseRoom } from "./components/choose-room/ChooseRoom";
 import { ChooseEnvironment } from "./components/choose-environment/ChooseEnvironment";
 import { ChooseFurniture } from "./components/choose-furniture/ChooseFurniture";
 import { ChooseBarbeque } from "./components/choose-barbeque/ChooseBarbeque";
-import { Loading } from "../../components/index";
+import { Budget, Loading, ProgressBar } from "../../components/index";
 import './build-barbeque.scss';
 
 const stepTitles = {
@@ -23,6 +23,8 @@ export const BuildBarbeque = () => {
     const [barbeque, setBarbeque] = useState( null );
     const [isLoading, setIsLoading] = useState( false );
 
+    const resultCanvasRef = useRef( null );
+
     const nextStep = () => {
         setCurrentStep( currentStep + 1 );
     }
@@ -34,9 +36,35 @@ export const BuildBarbeque = () => {
     const createImage = () => {
         setIsLoading( true );
         console.log({ room, environmentColors, furniture, barbeque });
+        
+        const canvas = resultCanvasRef.current;
+        canvas.width = room.width;
+
+        drawImageOnCanvas( room );
+        drawImageOnCanvas( environmentColors.walls );
+        drawImageOnCanvas( environmentColors.floor );
+        drawImageOnCanvas( environmentColors.roof );
+        drawImageOnCanvas( furniture );
+        drawImageOnCanvas( barbeque );
+
+        const imageDataURL = canvas.toDataURL('image/png');
+        console.log('imageDataURL', imageDataURL);
 
         setIsLoading( false );
     }
+
+    const drawImageOnCanvas = ( obj ) => {
+        console.log('OBJ CANVAS', obj)
+        const canvas = resultCanvasRef.current;
+        const ctx = canvas.getContext('2d');
+
+        const img = new Image();
+        img.src = obj.image_url;
+        img.onload = () => {
+        //   ctx.drawImage(img, obj.x, obj.y);
+          ctx.drawImage(img, 0, 0, obj.height, obj.width);
+        };
+      }
 
     useEffect(() => {
         if ( currentStep === 3 && barbeque !== null ) {
@@ -57,15 +85,12 @@ export const BuildBarbeque = () => {
             { currentStep === 3 && !isLoading && <ChooseBarbeque decrementBudget={decrementBudget} setBarbeque={setBarbeque}/> }
 
             { isLoading && <div className="loading-container"><Loading /></div>}
-            
-            <div className="budget-container">
-                <div className="budget">
-                    <span>Presupuesto: {budget.toLocaleString('es-cl', {currency: 'CLP', style: 'currency'})}</span>
-                </div>
-            </div>
 
-            <div className="progress">
-            </div>
+            {/* <canvas ref={resultCanvasRef} width="800" height="600" style={{ display: 'none' }}></canvas> */}
+            <canvas ref={resultCanvasRef} width="800" height="600"></canvas>
+            
+            <Budget amount={budget}/>
+            <ProgressBar currentStep={currentStep} />
         </div>
     )
 };

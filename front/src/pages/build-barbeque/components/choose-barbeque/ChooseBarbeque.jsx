@@ -6,24 +6,32 @@ const barbequeOptions = [
         name: 'barbeque',
         price: 100000,
         image_url: 'img/barbeques/barbeque-1.png',
+        height: 200,
+        width: 200
     },
     {
         id: 2,
         name: 'barbeque',
         price: 100000,
         image_url: 'img/barbeques/barbeque-2.png',
+        height: 200,
+        width: 200
     },
     {
         id: 3,
         name: 'barbeque',
         price: 100000,
         image_url: 'img/barbeques/barbeque-3.png',
+        height: 200,
+        width: 200
     },
     {
         id: 4,
         name: 'barbeque',
         price: 100000,
         image_url: 'img/barbeques/barbeque-4.png',
+        height: 200,
+        width: 200
     },
 ];
 

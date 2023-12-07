@@ -7,24 +7,32 @@ const furnitureOptions = [
         name: 'mesa',
         price: 100000,
         image_url: 'img/furniture/furniture-1.png',
+        height: 300,
+        width: 300
     },
     {
         id: 2,
         name: 'mesa',
         price: 100000,
         image_url: 'img/furniture/furniture-2.png',
+        height: 300,
+        width: 300
     },
     {
         id: 3,
         name: 'mesa',
         price: 100000,
         image_url: 'img/furniture/furniture-3.png',
+        height: 300,
+        width: 300
     },
     {
         id: 4,
         name: 'mesa',
         price: 100000,
         image_url: 'img/furniture/furniture-4.png',
+        height: 300,
+        width: 300
     },
 ];
 
@@ -51,19 +59,21 @@ export const ChooseFurniture = ({ setFurniture, decrementBudget, nextStep }) => 
         const canvas = canvasRef.current;
         const ctx = canvas.getContext('2d');
         const img = new Image();
-        img.src = 'img/furniture/furniture.png';
+        img.src = 'img/quincho.jpeg';
+        // ctx.imageSmoothingEnabled = true;
+
         img.onload = () => {
-            ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+            // ctx.clearRect(0, 0, canvasWidth, canvasHeight); //clean canvas
+            ctx.drawImage(img, 0, 0, canvas.height, canvas.width);
         }
     }, [])
     
 
     return (
         <div className="furniture-container">
-            <canvas width={400} height={400} ref={canvasRef}/>
+            <canvas width={300} height={300} ref={canvasRef}/>
             <div className='furniture-options'>
                 { furnitureOptions.map( furniture => (
-                    
                     <img 
                         className='furniture-option'
                         key={furniture.id} 

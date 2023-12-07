@@ -8,19 +8,22 @@ const environmentsImages = [
         id: 1,
         image_url: 'img/environments/env-1.png',
         name: 'floor',
-        // width: 500,
-        // height: 500,
+        height: 100,
+        width: 100
     },
     {
         id: 2,
         image_url: 'img/environments/env-2.png',
-        name: 'walls'
+        name: 'walls',
+        height: 100,
+        width: 100
     },
     {
         id: 3,
         image_url: 'img/environments/env-3.png',
-        name: 'roof'
-
+        name: 'roof',
+        height: 100,
+        width: 100
     }
 ];
 

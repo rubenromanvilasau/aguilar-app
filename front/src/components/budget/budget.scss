@@ -1,0 +1,15 @@
+.budget-container{
+    display: flex;
+    justify-content: end;
+
+    .budget{
+        background-color: white;
+        padding: 1rem;
+        border-radius: 15px;
+        color: black;
+        font-weight: bold;
+        text-transform: uppercase;
+        box-sizing: border-box;
+    }
+
+}
