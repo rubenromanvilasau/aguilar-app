@@ -46,7 +46,7 @@ export const ResultsPage = () => {
                     <QRCode
                         size={256}
                         style={{ height: "auto", maxWidth: "100%", width: "100%" }}
-                        value={`http://192.168.100.20:5173/download-image/${id}`}
+                        value={`http://34.16.131.129/download-image/${id}`}
                         viewBox={`0 0 256 256`}
                     />
                 </div>
