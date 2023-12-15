@@ -12,6 +12,8 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json({ limit: '10mb' }))
 
+app.use( '/api', router );
+
 app.use(express.static(path.join(__dirname, 'dist')));
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'dist', 'index.html'));
@@ -19,7 +21,6 @@ app.get('*', (req, res) => {
 
 app.set('port', process.env.PORT || 3000);
 
-app.use( '/api', router );
 
 app.listen(app.get('port'), () => {
     console.log(`Server running at http://localhost:${app.get('port')}`);
