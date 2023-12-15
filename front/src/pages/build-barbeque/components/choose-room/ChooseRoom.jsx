@@ -38,7 +38,6 @@ export const ChooseRoom = ({room, setRoom, nextStep, decrementBudget }) => {
 
     const onClickNext = () => {
         nextStep();
-        decrementBudget( room.price );
     }
 
     return (

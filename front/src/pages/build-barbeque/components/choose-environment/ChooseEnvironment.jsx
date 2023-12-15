@@ -10,7 +10,7 @@ const environmentsImages = [
             {
                 id: 1,
                 name: 'madera.png',
-                price: 1000000,
+                price: 1256000,
                 icon: 'img/cielo/icons/madera.png',
                 cuadradoheight: 462,
                 cuadradowidth: 265,
@@ -43,7 +43,7 @@ const environmentsImages = [
             {
                 id: 2,
                 name: 'panel.png',
-                price: 1000000,
+                price: 839990,
                 icon: 'img/cielo/icons/panel.png',
                 cuadradoheight: 462,
                 cuadradowidth: 265,
@@ -76,7 +76,7 @@ const environmentsImages = [
             {
                 id: 3,
                 name: 'teja.png',
-                price: 1000000,
+                price: 2772000,
                 icon: 'img/cielo/icons/teja.png',
                 cuadradoheight: 462,
                 cuadradowidth: 265,
@@ -109,7 +109,7 @@ const environmentsImages = [
             {
                 id: 4,
                 name: 'zinc.png',
-                price: 1000000,
+                price: 945000,
                 icon: 'img/cielo/icons/zinc.png',
                 cuadradoheight: 462,
                 cuadradowidth: 265,
@@ -148,7 +148,7 @@ const environmentsImages = [
             {
                 id: 1,
                 name: 'gris.png',
-                price: 1000000,
+                price: 772000,
                 icon: 'img/paredes/icons/pintura.png',
                 cuadradoheight: 155,
                 cuadradowidth: 185,
@@ -181,7 +181,7 @@ const environmentsImages = [
             {
                 id: 2,
                 name: 'ladrillo.png',
-                price: 1000000,
+                price: 1256000,
                 icon: 'img/paredes/icons/ladrillo.png',
                 cuadradoheight: 155,
                 cuadradowidth: 185,
@@ -214,7 +214,7 @@ const environmentsImages = [
             {
                 id: 3,
                 name: 'madera.png',
-                price: 1000000,
+                price: 939990,
                 icon: 'img/paredes/icons/madera.png',
                 cuadradoheight: 155,
                 cuadradowidth: 185,
@@ -247,7 +247,7 @@ const environmentsImages = [
             {
                 id: 4,
                 name: 'piedra.png',
-                price: 1000000,
+                price: 2945000,
                 icon: 'img/paredes/icons/piedra.png',
                 cuadradoheight: 155,
                 cuadradowidth: 185,
@@ -286,7 +286,7 @@ const environmentsImages = [
             {
                 id: 1,
                 name: 'cemento.png',
-                price: 1000000,
+                price: 1339990,
                 icon: 'img/piso/icons/cemento.png',
                 cuadradoheight: 71,
                 cuadradowidth: 225,
@@ -319,7 +319,7 @@ const environmentsImages = [
             {
                 id: 2,
                 name: 'ceramica.png',
-                price: 1000000,
+                price: 2256000,
                 icon: 'img/piso/icons/ceramica.png',
                 cuadradoheight: 71,
                 cuadradowidth: 225,
@@ -353,7 +353,7 @@ const environmentsImages = [
             {
                 id: 3,
                 name: 'ladrillo.png',
-                price: 1000000,
+                price: 4772000,
                 icon: 'img/piso/icons/ladrillo.png',
                 cuardradoheight: 71,
                 cuadradowidth: 225,
@@ -387,7 +387,7 @@ const environmentsImages = [
             {
                 id: 4,
                 name: 'parque.png',
-                price: 1000000,
+                price: 3945000,
                 icon: 'img/piso/icons/parque.png',
                 cuadradoheight: 71,
                 cuadradowidth: 225,

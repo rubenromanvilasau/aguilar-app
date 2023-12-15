@@ -4,19 +4,22 @@ import './choose-furniture.scss';
 const furnitureOptions = [
     {
         id: 1,
-        price: 100000,
+        price: 409990,
         folder: 'muebles',
         imageName: 'mesa 1.png',
+
         cuadradoheight: 70,
         cuadradowidth: 80,
-        Lheight: 70,
-        Lwidth: 100,
-        rectanguloheight: 480,
-        rectangulowidth: 450,
         cuadradox: 120,
         cuadradoy: 265,
+
+        Lheight: 70,
+        Lwidth: 100,
         Lx: 220,
         Ly: 240,
+        
+        rectanguloheight: 480,
+        rectangulowidth: 450,
         rectangulox: 25,
         rectanguloy: -15,
 
@@ -37,21 +40,24 @@ const furnitureOptions = [
     },
     {
         id: 2,
-        price: 100000,
+        price: 869990,
         folder: 'muebles',
         imageName: 'mesa 2.png',
+        
         cuadradoheight: 70,
         cuadradowidth: 80,
-        Lheight: 70,
-        Lwidth: 100,
-        rectanguloheight: 60,
-        rectangulowidth: 120,
         cuadradox: 120,
         cuadradoy: 265,
-        Lx: 220,
-        Ly: 240,
+        
+        rectanguloheight: 60,
+        rectangulowidth: 120,
         rectangulox: 182,
         rectanguloy: 240,
+       
+        Lheight: 70,
+        Lwidth: 100,
+        Lx: 220,
+        Ly: 240,
 
         rescuadradoheight: 115,
         rescuadradowidth: 160,
@@ -70,21 +76,24 @@ const furnitureOptions = [
     },
     {
         id: 3,
-        price: 100000,
+        price: 349990,
         folder: 'muebles',
         imageName: 'mesa 3.png',
+
         cuadradoheight: 70,
         cuadradowidth: 80,
-        Lheight: 70,
-        Lwidth: 100,
-        rectanguloheight: 70,
-        rectangulowidth: 120,
         cuadradox: 120,
         cuadradoy: 265,
-        Lx: 220,
-        Ly: 240,
+        
+        rectanguloheight: 70,
+        rectangulowidth: 120,
         rectangulox: 180,
         rectanguloy: 240,
+        
+        Lheight: 70,
+        Lwidth: 100,
+        Lx: 220,
+        Ly: 240,
 
         rescuadradoheight: 115,
         rescuadradowidth: 160,
@@ -103,19 +112,22 @@ const furnitureOptions = [
     },
     {
         id: 4,
-        price: 100000,
+        price: 799990,
         folder: 'muebles',
         imageName: 'mesa 4.png',
+
         cuadradoheight: 70,
         cuadradowidth: 80,
-        Lheight: 70,
-        Lwidth: 100,
-        rectanguloheight: 400,
-        rectangulowidth: 400,
         cuadradox: 120,
         cuadradoy: 265,
+
+        Lheight: 70,
+        Lwidth: 100,
         Lx: 220,
         Ly: 240,
+
+        rectanguloheight: 400,
+        rectangulowidth: 400,
         rectangulox: 54,
         rectanguloy: 35,
 
@@ -136,19 +148,22 @@ const furnitureOptions = [
     },
     {
         id: 5,
-        price: 100000,
+        price: 1339990,
         folder: 'muebles',
         imageName: 'mesa 5.png',
+       
         cuadradoheight: 70,
         cuadradowidth: 80,
-        Lheight: 70,
-        Lwidth: 100,
-        rectanguloheight: 300,
-        rectangulowidth: 300,
         cuadradox: 120,
         cuadradoy: 265,
+
         Lx: 220,
         Ly: 240,
+        Lheight: 70,
+        Lwidth: 100,
+
+        rectanguloheight: 300,
+        rectangulowidth: 300,
         rectangulox: 110,
         rectanguloy: 100,
 
@@ -169,19 +184,22 @@ const furnitureOptions = [
     },
     {
         id: 6,
-        price: 100000,
+        price: 1983960,
         folder: 'muebles',
         imageName: 'mesa 6.png',
+
         cuadradoheight: 70,
         cuadradowidth: 80,
-        Lheight: 70,
-        Lwidth: 100,
-        rectanguloheight: 400,
-        rectangulowidth: 400,
         cuadradox: 120,
         cuadradoy: 265,
+
+        Lheight: 70,
+        Lwidth: 100,
         Lx: 220,
         Ly: 240,
+
+        rectanguloheight: 400,
+        rectangulowidth: 400,
         rectangulox: 54,
         rectanguloy: 30,
 
