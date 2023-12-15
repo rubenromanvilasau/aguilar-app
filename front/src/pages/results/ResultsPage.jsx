@@ -30,7 +30,7 @@ export const ResultsPage = () => {
 
         const timer = setTimeout(() => {
             navigate('/thanks');
-        }, 10000);
+        }, 30000);
 
         return () => clearTimeout(timer);
     },[]);
