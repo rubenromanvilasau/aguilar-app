@@ -5,7 +5,6 @@ const UserController = require('../controllers/user.controller');
 const imageController = new ImageController();
 const userController = new UserController();
 
-router.get('/', imageController.generateImage);
 router.get('/images/:id', imageController.getImage);
 router.post('/users/', userController.saveUser);
 router.post('/images/', imageController.saveImage);
