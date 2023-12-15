@@ -1,14 +1,20 @@
 .furniture-container{
     background-color: white;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
-    padding: 2rem;
     gap: 1rem;
 
+    .select-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 1rem;
+    }
+
     canvas{
-        max-width: 100%;
-        width: 50%;
+        // max-width: 100%;
+        // width: 50%;
         // height: 40%;
         // min-width: 30%;
         height: auto;   
@@ -18,21 +24,30 @@
 
     .furniture-options {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-gap: 10px;
 
-        .furniture-option{
-            max-width: 100%;
-            height: auto;   
-            display: block;
+        .img-div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 4px solid #b58604;
+            border-radius: 5px;
             cursor: pointer;
-            transition: 1.03s;
-
+            
             &:hover{
                 transform: scale(1.03);
             }
-
+            
+            .furniture-option{
+                max-width: 100%;
+                width: 200px;
+                height: auto;   
+                display: block;
+                transition: 1.03s;
+            }
         }
+
     }
 }
 

@@ -1,9 +1,14 @@
 .environment-container{
     background-color: white;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     gap: 1rem;
 
-  
+  .environment-options{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  }
 }

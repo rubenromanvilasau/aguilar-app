@@ -21,7 +21,7 @@ export const TestPage = () => {
         const drawImages = () => {
           // Cargar la primera imagen
           const img1 = new Image();
-          img1.src = 'img/quincho.webp';
+          img1.src = 'img/espacios/rectangulo.png';
     
           img1.onload = function () {
             // Dibujar la primera imagen en el canvas
@@ -29,11 +29,11 @@ export const TestPage = () => {
     
             // Cargar la segunda imagen
             const img2 = new Image();
-            img2.src = 'img/bbq.png';
+            img2.src = 'img/muebles/rectangulo/mesa 3.png';
     
             img2.onload = function () {
-              // Dibujar la segunda imagen en el canvas, superponiéndola sobre la primera
-              ctx.drawImage(img2, 200, 200, 200, 200); // Ajusta las coordenadas y el tamaño según tus necesidades
+              
+              ctx.drawImage(img2, 600, 320, 160, 100); 
             };
           };
         };
@@ -44,7 +44,7 @@ export const TestPage = () => {
     return (
         <div className='test-container'>
             <h1>Test Page</h1>
-            <canvas id="canvas" ref={canvasRef} width="600" height="600"></canvas>
+            <canvas id="canvas" ref={canvasRef} width="1200" height="600"></canvas>
             <button onClick={handleDownloadImage}>Descargar</button>
         </div>
     )

@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { EnvironmentCanvas } from '../../../../components';
 
 import './environment.scss';
@@ -6,80 +5,469 @@ import './environment.scss';
 const environmentsImages = [
     {
         id: 1,
-        image_url: 'img/environments/env-1.png',
-        name: 'floor',
-        height: 100,
-        width: 100
+        folder: 'cielo',
+        options: [
+            {
+                id: 1,
+                name: 'madera.png',
+                price: 1000000,
+                icon: 'img/cielo/icons/madera.png',
+                cuadradoheight: 462,
+                cuadradowidth: 265,
+                Lheight: 462,
+                Lwidth: 246,
+                rectanguloheight: 460,
+                rectangulowidth: 248,
+                cuadradox: 50,
+                cuadradoy: -17,
+                Lx: 128,
+                Ly: -13,
+                rectangulox: 117,
+                rectanguloy: -12,
+
+                rescuadradoheight: 710,
+                rescuadradowidth: 745,
+                rescuadradox: 140,
+                rescuadradoy: -50,
+
+                resLheight: 710,
+                resLwidth: 680,
+                resLx: 360,
+                resLy: -45,
+
+                resrectanguloheight: 716,
+                resrectangulowidth: 666,
+                resrectangulox: 343,
+                resrectanguloy: -45,
+            },
+            {
+                id: 2,
+                name: 'panel.png',
+                price: 1000000,
+                icon: 'img/cielo/icons/panel.png',
+                cuadradoheight: 462,
+                cuadradowidth: 265,
+                Lheight: 462,
+                Lwidth: 246,
+                rectanguloheight: 460,
+                rectangulowidth: 248,
+                cuadradox: 50,
+                cuadradoy: -17,
+                Lx: 128,
+                Ly: -13,
+                rectangulox: 117,
+                rectanguloy: -12,
+
+                rescuadradoheight: 710,
+                rescuadradowidth: 745,
+                rescuadradox: 140,
+                rescuadradoy: -50,
+
+                resLheight: 710,
+                resLwidth: 680,
+                resLx: 360,
+                resLy: -45,
+
+                resrectanguloheight: 716,
+                resrectangulowidth: 666,
+                resrectangulox: 343,
+                resrectanguloy: -45,
+            },
+            {
+                id: 3,
+                name: 'teja.png',
+                price: 1000000,
+                icon: 'img/cielo/icons/teja.png',
+                cuadradoheight: 462,
+                cuadradowidth: 265,
+                Lheight: 462,
+                Lwidth: 246,
+                rectanguloheight: 460,
+                rectangulowidth: 248,
+                cuadradox: 50,
+                cuadradoy: -17,
+                Lx: 128,
+                Ly: -13,
+                rectangulox: 117,
+                rectanguloy: -12,
+
+                rescuadradoheight: 710,
+                rescuadradowidth: 745,
+                rescuadradox: 140,
+                rescuadradoy: -50,
+
+                resLheight: 710,
+                resLwidth: 680,
+                resLx: 360,
+                resLy: -45,
+
+                resrectanguloheight: 716,
+                resrectangulowidth: 666,
+                resrectangulox: 343,
+                resrectanguloy: -45,
+            },
+            {
+                id: 4,
+                name: 'zinc.png',
+                price: 1000000,
+                icon: 'img/cielo/icons/zinc.png',
+                cuadradoheight: 462,
+                cuadradowidth: 265,
+                Lheight: 462,
+                Lwidth: 246,
+                rectanguloheight: 460,
+                rectangulowidth: 248,
+                cuadradox: 50,
+                cuadradoy: -17,
+                Lx: 128,
+                Ly: -13,
+                rectangulox: 117,
+                rectanguloy: -12,
+
+                rescuadradoheight: 710,
+                rescuadradowidth: 745,
+                rescuadradox: 140,
+                rescuadradoy: -50,
+
+                resLheight: 710,
+                resLwidth: 680,
+                resLx: 360,
+                resLy: -45,
+
+                resrectanguloheight: 716,
+                resrectangulowidth: 666,
+                resrectangulox: 343,
+                resrectanguloy: -45,
+            }
+        ]
     },
     {
         id: 2,
-        image_url: 'img/environments/env-2.png',
-        name: 'walls',
-        height: 100,
-        width: 100
+        folder: 'paredes',
+        options: [
+            {
+                id: 1,
+                name: 'gris.png',
+                price: 1000000,
+                icon: 'img/paredes/icons/pintura.png',
+                cuadradoheight: 155,
+                cuadradowidth: 185,
+                Lheight: 94,
+                Lwidth: 141,
+                rectanguloheight: 112,
+                rectangulowidth: 230,
+                cuadradox: 110,
+                cuadradoy: 140,
+                Lx: 165,
+                Ly: 173,
+                rectangulox: 126,
+                rectanguloy: 158,
+
+                rescuadradoheight: 208,
+                rescuadradowidth: 515,
+                rescuadradox: 305,
+                rescuadradoy: 200,
+
+                resLheight: 135,
+                resLwidth: 399,
+                resLx: 457,
+                resLy: 240,
+
+                resrectanguloheight: 160,
+                resrectangulowidth: 645,
+                resrectangulox: 350,
+                resrectanguloy: 220,
+            },
+            {
+                id: 2,
+                name: 'ladrillo.png',
+                price: 1000000,
+                icon: 'img/paredes/icons/ladrillo.png',
+                cuadradoheight: 155,
+                cuadradowidth: 185,
+                Lheight: 94,
+                Lwidth: 141,
+                rectanguloheight: 112,
+                rectangulowidth: 230,
+                cuadradox: 110,
+                cuadradoy: 140,
+                Lx: 165,
+                Ly: 173,
+                rectangulox: 126,
+                rectanguloy: 158,
+
+                rescuadradoheight: 208,
+                rescuadradowidth: 515,
+                rescuadradox: 305,
+                rescuadradoy: 200,
+
+                resLheight: 135,
+                resLwidth: 399,
+                resLx: 457,
+                resLy: 240,
+
+                resrectanguloheight: 160,
+                resrectangulowidth: 645,
+                resrectangulox: 350,
+                resrectanguloy: 220,
+            },
+            {
+                id: 3,
+                name: 'madera.png',
+                price: 1000000,
+                icon: 'img/paredes/icons/madera.png',
+                cuadradoheight: 155,
+                cuadradowidth: 185,
+                Lheight: 94,
+                Lwidth: 141,
+                rectanguloheight: 112,
+                rectangulowidth: 230,
+                cuadradox: 110,
+                cuadradoy: 140,
+                Lx: 165,
+                Ly: 173,
+                rectangulox: 126,
+                rectanguloy: 158,
+
+                rescuadradoheight: 208,
+                rescuadradowidth: 515,
+                rescuadradox: 305,
+                rescuadradoy: 200,
+
+                resLheight: 135,
+                resLwidth: 399,
+                resLx: 457,
+                resLy: 240,
+
+                resrectanguloheight: 160,
+                resrectangulowidth: 645,
+                resrectangulox: 350,
+                resrectanguloy: 220,
+            },
+            {
+                id: 4,
+                name: 'piedra.png',
+                price: 1000000,
+                icon: 'img/paredes/icons/piedra.png',
+                cuadradoheight: 155,
+                cuadradowidth: 185,
+                Lheight: 94,
+                Lwidth: 141,
+                rectanguloheight: 112,
+                rectangulowidth: 230,
+                cuadradox: 110,
+                cuadradoy: 140,
+                Lx: 165,
+                Ly: 173,
+                rectangulox: 126,
+                rectanguloy: 158,
+
+                rescuadradoheight: 208,
+                rescuadradowidth: 515,
+                rescuadradox: 305,
+                rescuadradoy: 200,
+
+                resLheight: 135,
+                resLwidth: 399,
+                resLx: 457,
+                resLy: 240,
+
+                resrectanguloheight: 160,
+                resrectangulowidth: 645,
+                resrectangulox: 350,
+                resrectanguloy: 220,
+            },
+        ]
     },
     {
         id: 3,
-        image_url: 'img/environments/env-3.png',
-        name: 'roof',
-        height: 100,
-        width: 100
-    }
+        folder: 'piso',
+        options: [
+            {
+                id: 1,
+                name: 'cemento.png',
+                price: 1000000,
+                icon: 'img/piso/icons/cemento.png',
+                cuadradoheight: 71,
+                cuadradowidth: 225,
+                Lheight: 60,
+                Lwidth: 146,
+                rectanguloheight: 432,
+                rectangulowidth: 250,
+                cuadradox: 68,
+                cuadradoy: 255,
+                Lx: 160,
+                Ly: 245,
+                rectangulox: 116,
+                rectanguloy: -1,
+
+                rescuadradoheight: 95,
+                rescuadradowidth: 640,
+                rescuadradox: 190,
+                rescuadradoy: 358,
+
+                resLheight: 82,
+                resLwidth: 402,
+                resLx: 454,
+                resLy: 343,
+
+                resrectanguloheight: 600,
+                resrectangulowidth: 705,
+                resrectangulox: 318,
+                resrectanguloy: 0,
+            },
+            {
+                id: 2,
+                name: 'ceramica.png',
+                price: 1000000,
+                icon: 'img/piso/icons/ceramica.png',
+                cuadradoheight: 71,
+                cuadradowidth: 225,
+                Lheight: 60,
+                Lwidth: 146,
+                rectanguloheight: 432,
+                rectangulowidth: 250,
+                cuadradox: 68,
+                cuadradoy: 255,
+                Lx: 160,
+                Ly: 245,
+                rectangulox: 116,
+                rectanguloy: -1,
+
+
+                rescuadradoheight: 95,
+                rescuadradowidth: 640,
+                rescuadradox: 190,
+                rescuadradoy: 358,
+
+                resLheight: 82,
+                resLwidth: 402,
+                resLx: 454,
+                resLy: 343,
+
+                resrectanguloheight: 600,
+                resrectangulowidth: 705,
+                resrectangulox: 318,
+                resrectanguloy: 0,
+            },
+            {
+                id: 3,
+                name: 'ladrillo.png',
+                price: 1000000,
+                icon: 'img/piso/icons/ladrillo.png',
+                cuardradoheight: 71,
+                cuadradowidth: 225,
+                Lheight: 60,
+                Lwidth: 146,
+                rectanguloheight: 432,
+                rectangulowidth: 250,
+                cuadradox: 68,
+                cuadradoy: 255,
+                Lx: 160,
+                Ly: 245,
+                rectangulox: 116,
+                rectanguloy: -1,
+
+
+                rescuadradoheight: 95,
+                rescuadradowidth: 640,
+                rescuadradox: 190,
+                rescuadradoy: 358,
+
+                resLheight: 82,
+                resLwidth: 402,
+                resLx: 454,
+                resLy: 343,
+
+                resrectanguloheight: 600,
+                resrectangulowidth: 705,
+                resrectangulox: 318,
+                resrectanguloy: 0,
+            },
+            {
+                id: 4,
+                name: 'parque.png',
+                price: 1000000,
+                icon: 'img/piso/icons/parque.png',
+                cuadradoheight: 71,
+                cuadradowidth: 225,
+                Lheight: 60,
+                Lwidth: 146,
+                rectanguloheight: 432,
+                rectangulowidth: 250,
+                cuadradox: 68,
+                cuadradoy: 255,
+                Lx: 160,
+                Ly: 245,
+                rectangulox: 116,
+                rectanguloy: -1,
+
+
+                rescuadradoheight: 95,
+                rescuadradowidth: 640,
+                rescuadradox: 190,
+                rescuadradoy: 358,
+
+                resLheight: 82,
+                resLwidth: 402,
+                resLx: 454,
+                resLy: 343,
+
+                resrectanguloheight: 600,
+                resrectangulowidth: 705,
+                resrectangulox: 318,
+                resrectanguloy: 0,
+            }
+        ]
+    },
 ];
 
-const colorsOptions = [
-    {
-        image_url: 'img/barbeques/barbeque-1.png',
-        id: 1,
-        price: 1000000,
-        name: 'red',
-    },
-    {
-        image_url: 'img/barbeques/barbeque-2.png',
-        id: 2,
-        price: 1000000,
-        name: 'green',
-    },
-    {
-        image_url: 'img/barbeques/barbeque-3.png',
-        id: 3,
-        price: 1000000,
-        name: 'blue',
-    }
-];
-
-export const ChooseEnvironment = ({ environmentColors, setEnvironmentColors, nextStep, decrementBudget }) => {
+export const ChooseEnvironment = ({ room, environmentMaterials, setEnvironmentMaterials, nextStep, decrementBudget }) => {
 
     const handleOptionClick = ( environment, option ) => {
-        setEnvironmentColors(prevOptions => ({
+        // if( environmentMaterials[environment.folder].image_url === `img/${environment.folder}/${room.name}/${option.name}` ) {
+        //     return;
+        // }
+        setEnvironmentMaterials(prevOptions => ({
             ...prevOptions,
-            [environment.name]: option,
+            [environment.folder]: {...option, image_url : `img/${environment.folder}/${room.name}/${option.name}`},
         }));
 
-        decrementBudget( option.price );
+    }
+
+    const onClickNext = () => {
+        nextStep();
+        const prices = Object.values(environmentMaterials)
+                            .map(item => item.price)
+                            .reduce((a, b) => a + b, 0);
+                            
+        decrementBudget( prices );
     }
     
-    useEffect( () => {
-        console.log('selectedOptions', environmentColors);
-        
-        if( Object.keys( environmentColors ).length === 3 ) {
-            nextStep();
-        }
-        
-    }, [environmentColors]);
-
     return (
         <div className="environment-container">
+            <div className="environment-options">
                 { environmentsImages.map( environment => (
                     <EnvironmentCanvas
-                        key={environment.image_url}
+                        key={environment.id}
+                        room={room}
                         environment={environment}
-                        colorsOptions={colorsOptions}
-                        environmentColors={environmentColors}
+                        options={environment.options}
+                        environmentMaterials={environmentMaterials}
                         handleOptionClick={handleOptionClick}
                     />
                 ))
                 }
+            </div>
+            <div className="btn-container">
+                <button
+                    className="next-button"
+                    onClick={onClickNext}
+                    disabled={ Object.keys( environmentMaterials ).length !== 3 }
+                >
+                    Siguiente
+                </button>
+            </div>
         </div>
     )
 };

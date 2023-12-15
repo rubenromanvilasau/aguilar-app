@@ -4,85 +4,280 @@ import './choose-furniture.scss';
 const furnitureOptions = [
     {
         id: 1,
-        name: 'mesa',
         price: 100000,
-        image_url: 'img/furniture/furniture-1.png',
-        height: 300,
-        width: 300
+        folder: 'muebles',
+        imageName: 'mesa 1.png',
+        cuadradoheight: 70,
+        cuadradowidth: 80,
+        Lheight: 70,
+        Lwidth: 100,
+        rectanguloheight: 480,
+        rectangulowidth: 450,
+        cuadradox: 120,
+        cuadradoy: 265,
+        Lx: 220,
+        Ly: 240,
+        rectangulox: 25,
+        rectanguloy: -15,
+
+        rescuadradoheight: 115,
+        rescuadradowidth: 160,
+        rescuadradox: 330,
+        rescuadradoy: 340,
+
+        resLheight: 80,
+        resLwidth: 130,
+        resLx: 600,
+        resLy: 320,
+
+        resrectanguloheight: 600,
+        resrectangulowidth: 705,
+        resrectangulox: 335,
+        resrectanguloy: 0,
     },
     {
         id: 2,
-        name: 'mesa',
         price: 100000,
-        image_url: 'img/furniture/furniture-2.png',
-        height: 300,
-        width: 300
+        folder: 'muebles',
+        imageName: 'mesa 2.png',
+        cuadradoheight: 70,
+        cuadradowidth: 80,
+        Lheight: 70,
+        Lwidth: 100,
+        rectanguloheight: 60,
+        rectangulowidth: 120,
+        cuadradox: 120,
+        cuadradoy: 265,
+        Lx: 220,
+        Ly: 240,
+        rectangulox: 182,
+        rectanguloy: 240,
+
+        rescuadradoheight: 115,
+        rescuadradowidth: 160,
+        rescuadradox: 330,
+        rescuadradoy: 340,
+
+        resLheight: 80,
+        resLwidth: 130,
+        resLx: 600,
+        resLy: 320,
+
+        resrectanguloheight: 100,
+        resrectangulowidth: 160,
+        resrectangulox: 600,
+        resrectanguloy: 320,
     },
     {
         id: 3,
-        name: 'mesa',
         price: 100000,
-        image_url: 'img/furniture/furniture-3.png',
-        height: 300,
-        width: 300
+        folder: 'muebles',
+        imageName: 'mesa 3.png',
+        cuadradoheight: 70,
+        cuadradowidth: 80,
+        Lheight: 70,
+        Lwidth: 100,
+        rectanguloheight: 70,
+        rectangulowidth: 120,
+        cuadradox: 120,
+        cuadradoy: 265,
+        Lx: 220,
+        Ly: 240,
+        rectangulox: 180,
+        rectanguloy: 240,
+
+        rescuadradoheight: 115,
+        rescuadradowidth: 160,
+        rescuadradox: 340,
+        rescuadradoy: 330,
+
+        resLheight: 80,
+        resLwidth: 130,
+        resLx: 600,
+        resLy: 320,
+
+        resrectanguloheight: 100,
+        resrectangulowidth: 160,
+        resrectangulox: 600,
+        resrectanguloy: 320,
     },
     {
         id: 4,
-        name: 'mesa',
         price: 100000,
-        image_url: 'img/furniture/furniture-4.png',
-        height: 300,
-        width: 300
+        folder: 'muebles',
+        imageName: 'mesa 4.png',
+        cuadradoheight: 70,
+        cuadradowidth: 80,
+        Lheight: 70,
+        Lwidth: 100,
+        rectanguloheight: 400,
+        rectangulowidth: 400,
+        cuadradox: 120,
+        cuadradoy: 265,
+        Lx: 220,
+        Ly: 240,
+        rectangulox: 54,
+        rectanguloy: 35,
+
+        rescuadradoheight: 115,
+        rescuadradowidth: 160,
+        rescuadradox: 340,
+        rescuadradoy: 330,
+
+        resLheight: 80,
+        resLwidth: 130,
+        resLx: 600,
+        resLy: 320,
+
+        resrectanguloheight: 600,
+        resrectangulowidth: 705,
+        resrectangulox: 335,
+        resrectanguloy: 0,
+    },
+    {
+        id: 5,
+        price: 100000,
+        folder: 'muebles',
+        imageName: 'mesa 5.png',
+        cuadradoheight: 70,
+        cuadradowidth: 80,
+        Lheight: 70,
+        Lwidth: 100,
+        rectanguloheight: 300,
+        rectangulowidth: 300,
+        cuadradox: 120,
+        cuadradoy: 265,
+        Lx: 220,
+        Ly: 240,
+        rectangulox: 110,
+        rectanguloy: 100,
+
+        rescuadradoheight: 115,
+        rescuadradowidth: 160,
+        rescuadradox: 340,
+        rescuadradoy: 330,
+
+        resLheight: 80,
+        resLwidth: 130,
+        resLx: 600,
+        resLy: 320,
+
+        resrectanguloheight: 600,
+        resrectangulowidth: 705,
+        resrectangulox: 335,
+        resrectanguloy: 0,
+    },
+    {
+        id: 6,
+        price: 100000,
+        folder: 'muebles',
+        imageName: 'mesa 6.png',
+        cuadradoheight: 70,
+        cuadradowidth: 80,
+        Lheight: 70,
+        Lwidth: 100,
+        rectanguloheight: 400,
+        rectangulowidth: 400,
+        cuadradox: 120,
+        cuadradoy: 265,
+        Lx: 220,
+        Ly: 240,
+        rectangulox: 54,
+        rectanguloy: 30,
+
+        rescuadradoheight: 115,
+        rescuadradowidth: 160,
+        rescuadradox: 340,
+        rescuadradoy: 330,
+
+        resLheight: 80,
+        resLwidth: 130,
+        resLx: 600,
+        resLy: 320,
+
+        resrectanguloheight: 600,
+        resrectangulowidth: 705,
+        resrectangulox: 335,
+        resrectanguloy: 0,
     },
 ];
 
-export const ChooseFurniture = ({ setFurniture, decrementBudget, nextStep }) => {
+export const ChooseFurniture = ({ room, furniture, setFurniture, decrementBudget, nextStep }) => {
 
     const canvasRef = useRef( null );
 
-    const handleOptionClick = ( furniture ) => {
-        setFurniture( furniture );
+    const handleOptionClick = async( furniture ) => {
+        setFurniture( {...furniture, image_url: `img/${furniture.folder}/${room.name}/${furniture.imageName}`} );
 
         const canvas = canvasRef.current;
         const ctx = canvas.getContext('2d');
+
+        await ctx.clearRect(0, 0, canvas.width, canvas.height);
+        await drawRoom();
+
         const img = new Image();
-        img.src = furniture.image_url;
+        img.src = `img/${furniture.folder}/${room.name}/${furniture.imageName}`;
         img.onload = () => {
-            ctx.drawImage(img, 0, 0, 200, 200);
+            ctx.drawImage(img, furniture[`${room.name + 'x'}`], furniture[`${room.name + 'y'}`], furniture[`${room.name + 'width'}`], furniture[`${room.name + 'height'}`]);
         }
 
-        decrementBudget( furniture.price );
+    }
+
+    const drawRoom = () => {
+        return new Promise( ( resolve ) => {
+            const canvas = canvasRef.current;
+            const ctx = canvas.getContext('2d');
+            
+            const img = new Image();
+            img.src = `img/${room.folder}/${room.imageName}`;
+    
+            img.onload = () => {
+                ctx.drawImage(img, 0, 0, canvas.height, canvas.width);
+                resolve();
+            }
+        })
+    }
+
+    const onClickNext = () => {
         nextStep();
+        decrementBudget( furniture.price );
     }
 
     useEffect(() => {
-        const canvas = canvasRef.current;
-        const ctx = canvas.getContext('2d');
-        const img = new Image();
-        img.src = 'img/quincho.jpeg';
-        // ctx.imageSmoothingEnabled = true;
-
-        img.onload = () => {
-            // ctx.clearRect(0, 0, canvasWidth, canvasHeight); //clean canvas
-            ctx.drawImage(img, 0, 0, canvas.height, canvas.width);
-        }
+        drawRoom();
     }, [])
     
 
     return (
         <div className="furniture-container">
-            <canvas width={300} height={300} ref={canvasRef}/>
-            <div className='furniture-options'>
-                { furnitureOptions.map( furniture => (
-                    <img 
-                        className='furniture-option'
-                        key={furniture.id} 
-                        src={furniture.image_url}
-                        alt="furniture"
-                        onClick={ () => handleOptionClick( furniture ) }
-                    />
-                    ))
-                }
+            <div className="select-container">
+                <canvas width={460} height={460} ref={canvasRef}/>
+                <div className='furniture-options'>
+                    { furnitureOptions.map( furniture => (
+                        <div 
+                            className='img-div' 
+                            key={furniture.id}
+                            onClick={ () => handleOptionClick( furniture ) }
+                        > 
+                            <img 
+                                className='furniture-option'
+                                src={`img/${furniture.folder}/${room.name === 'rectangulo' ? 'L' : room.name}/${furniture.imageName}`}
+                                alt="furniture"
+                            />
+                        </div>
+                        ))
+                    }
+                </div>
+            </div>
+
+            <div className="btn-container">
+                <button
+                    className="next-button"
+                    onClick={onClickNext}
+                    disabled={ !furniture }
+                >
+                    Siguiente
+                </button>
             </div>
         </div>
     )

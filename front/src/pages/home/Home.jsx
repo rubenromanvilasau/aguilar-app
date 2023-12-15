@@ -47,6 +47,13 @@ export const Home = () => {
 
   return (
     <div className='home-container'>
+      <div className='message'>
+        <span className='first'>Tu quincho soñado</span>
+        <span className='second'>Gracias a</span>
+        <span className='third'>Aguilar</span>
+        <span className='fourth'>Constructora S.P.A</span>
+
+      </div>
       <div className="form-card">
         <div className="title">
           <span>Participa del concurso</span>

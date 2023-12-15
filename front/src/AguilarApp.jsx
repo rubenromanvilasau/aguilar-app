@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
-import { BuildBarbeque, Home, ResultsPage, TestPage } from './pages/index';
+import { BuildBarbeque, DownloadImagePage, Home, ResultsPage, TestPage, ThanksPage } from './pages/index';
 
 export const AguilarApp = () => {
 
@@ -20,6 +20,14 @@ export const AguilarApp = () => {
       <Route
         path="/results/:id"
         element={<ResultsPage/>}
+      />
+      <Route
+        path="/download-image/:id"
+        element={<DownloadImagePage/>}
+      />
+      <Route
+        path="/thanks"
+        element={<ThanksPage/>}
       />
     </Routes>
   )

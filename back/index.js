@@ -8,7 +8,7 @@ const app = express();
 //Middlewares
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }))
-app.use(bodyParser.json())
+app.use(bodyParser.json({ limit: '10mb' }))
 
 app.set('port', process.env.PORT || 3000);
 

@@ -1,23 +1,39 @@
 .room-container{
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-around;
     gap: 1rem;
-    justify-content: center;
+    
+    .room-options{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
 
-    .room{
-        cursor: pointer;
-        transition: 0.3s;
+        .room{
+            cursor: pointer;
+            transition: 0.3s;
 
-        img{
-            max-width: 100%;
-            height: auto;   
-            display: block;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            :last-child{
+                width: inherit;
+            }
+    
+            img{
+                max-width: 100%;
+                width: 400px;
+                height: 400px;
+                // height: auto;   
+                display: block;
+            }
+    
+            // &:hover{
+            //     transform: scale(1.01);
+            // }
         }
 
-        &:hover{
-            transform: scale(1.04);
+        .current{
+            border: 4px solid #fff;
+            transform: scale(1.01);
         }
     }
 

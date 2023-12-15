@@ -1,0 +1,62 @@
+.thanks-container{
+    min-height: 100vh;
+    background-image: url('img/quincho.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .back-btn{
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        font-size: 2rem;
+        cursor: pointer;
+
+        &:hover{
+            transform: scale(1.04);
+        }
+        
+        button{
+            background: transparent;
+            border: none;
+            outline: none;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+    }
+
+    .gracias{
+        font-size: 2.8rem;
+        font-weight: 600;
+    }
+
+    .quincho{
+        font-size: 3.2rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        line-height: 1;
+        margin-top: 1rem;
+    }
+
+    .aguilar{
+        font-size: 6rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: .5rem;
+    }
+
+    .constructora{
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: .3rem;
+    }
+
+    span{
+        display: block;
+        color: white;
+    }
+}
