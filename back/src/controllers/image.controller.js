@@ -1,11 +1,5 @@
 const fs = require('fs');
 class ImageController {
-    
-
-    generateImage = async(req, res) => {
-        console.log('[generateImage]');
-        res.send('Generate image endpoint');
-    };
 
     getImage = async (req, res) => {
         const { id } = req.params;
