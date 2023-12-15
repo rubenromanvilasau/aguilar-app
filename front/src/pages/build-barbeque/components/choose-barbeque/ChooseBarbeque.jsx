@@ -8,16 +8,19 @@ const barbequeOptions = [
         price: 100000,
         imageName: 'parrilla 1.png',
         icon: 'parrilla/rectangulo/parrilla 1.png',
+
         cuadradoheight: 130,
         cuadradowidth: 120,
-        Lheight: 380,
-        Lwidth: 380,
-        rectanguloheight: 80,
-        rectangulowidth: 80,
         cuadradox: 210,
         cuadradoy: 180,
-        Lx: 105,
-        Ly: 45,
+
+        Lheight: 55,
+        Lwidth: 55,
+        Lx: 165,
+        Ly: 220,
+        
+        rectanguloheight: 80,
+        rectangulowidth: 80,
         rectangulox: 140,
         rectanguloy: 195,
 
@@ -26,10 +29,10 @@ const barbequeOptions = [
         rescuadradox: 640,
         rescuadradoy: 240,
 
-        resLheight: 520,
-        resLwidth: 500,
-        resLx: 410,
-        resLy: 45,
+        resLheight: 100,
+        resLwidth: 100,
+        resLx: 450,
+        resLy: 265,
 
         resrectanguloheight: 110,
         resrectangulowidth: 110,
@@ -42,16 +45,19 @@ const barbequeOptions = [
         price: 100000,
         imageName: 'parrilla 2.png',
         icon: 'parrilla/rectangulo/parrilla 2.png',
+        
         cuadradoheight: 100,
         cuadradowidth: 100,
-        Lheight: 340,
-        Lwidth: 340,
-        rectanguloheight: 70,
-        rectangulowidth: 80,
         cuadradox: 225,
         cuadradoy: 215,
+        
+        Lheight: 350,
+        Lwidth: 350,
         Lx: 115,
-        Ly: 70,
+        Ly: 65,
+        
+        rectanguloheight: 70,
+        rectangulowidth: 80,
         rectangulox: 140,
         rectanguloy: 210,
 
@@ -61,8 +67,8 @@ const barbequeOptions = [
         rescuadradoy: 275,
 
         resLheight: 600,
-        resLwidth: 600,
-        resLx: 380,
+        resLwidth: 630,
+        resLx: 375,
         resLy: 0,
 
         resrectanguloheight: 100,
@@ -76,16 +82,19 @@ const barbequeOptions = [
         price: 100000,
         imageName: 'parrilla 3.png',
         icon: 'parrilla/rectangulo/parrilla 3.png',
+        
         cuadradoheight: 320,
         cuadradowidth: 320,
-        Lheight: 350,
-        Lwidth: 350,
-        rectanguloheight: 400,
-        rectangulowidth: 400,
         cuadradox: 30,
         cuadradoy: 70,
-        Lx: 115,
-        Ly: 65,
+        
+        Lheight: 300,
+        Lwidth: 300,
+        Lx: 125,
+        Ly: 80,
+        
+        rectanguloheight: 400,
+        rectangulowidth: 400,
         rectangulox: 90,
         rectanguloy: 30,
 
@@ -96,7 +105,7 @@ const barbequeOptions = [
 
         resLheight: 600,
         resLwidth: 600,
-        resLx: 370,
+        resLx: 380,
         resLy: 0,
 
         resrectanguloheight: 600,
@@ -110,16 +119,19 @@ const barbequeOptions = [
         price: 100000,
         imageName: 'parrilla 4.png',
         icon: 'parrilla/rectangulo/parrilla 4.png',
+        
         cuadradoheight: 90,
         cuadradowidth: 90,
-        Lheight: 300,
-        Lwidth: 300,
-        rectanguloheight: 70,
-        rectangulowidth: 70,
         cuadradox: 220,
         cuadradoy: 220,
-        Lx: 125,
-        Ly: 80,
+
+        Lheight: 350,
+        Lwidth: 350,
+        Lx: 115,
+        Ly: 65,
+
+        rectanguloheight: 70,
+        rectangulowidth: 70,
         rectangulox: 150,
         rectanguloy: 210,
 
@@ -130,7 +142,7 @@ const barbequeOptions = [
 
         resLheight: 600,
         resLwidth: 600,
-        resLx: 380,
+        resLx: 370,
         resLy: 0,
 
         resrectanguloheight: 100,
@@ -144,16 +156,19 @@ const barbequeOptions = [
         price: 100000,
         imageName: 'parrilla 5.png',
         icon: 'parrilla/rectangulo/parrilla 5.png',
+        
         cuadradoheight: 100,
         cuadradowidth: 100,
-        Lheight: 350,
-        Lwidth: 350,
-        rectanguloheight: 70,
-        rectangulowidth: 70,
         cuadradox: 220,
         cuadradoy: 220,
-        Lx: 115,
-        Ly: 65,
+        
+        Lheight: 380,
+        Lwidth: 380,
+        Lx: 105,
+        Ly: 45,
+        
+        rectanguloheight: 70,
+        rectangulowidth: 70,
         rectangulox: 150,
         rectanguloy: 210,
 
@@ -162,10 +177,10 @@ const barbequeOptions = [
         rescuadradox: 640,
         rescuadradoy: 270,
 
-        resLheight: 600,
-        resLwidth: 630,
-        resLx: 375,
-        resLy: 0,
+        resLheight: 520,
+        resLwidth: 500,
+        resLx: 410,
+        resLy: 45,
 
         resrectanguloheight: 100,
         resrectangulowidth: 100,
@@ -178,16 +193,19 @@ const barbequeOptions = [
         price: 100000,
         imageName: 'parrilla 6.png',
         icon: 'parrilla/rectangulo/parrilla 6.png',
+        
         cuadradoheight: 130,
         cuadradowidth: 120,
-        Lheight: 55,
-        Lwidth: 55,
-        rectanguloheight: 75,
-        rectangulowidth: 75,
         cuadradox: 200,
         cuadradoy: 190,
-        Lx: 165,
-        Ly: 220,
+        
+        Lheight: 340,
+        Lwidth: 340,
+        Lx: 115,
+        Ly: 70,
+        
+        rectanguloheight: 75,
+        rectangulowidth: 75,
         rectangulox: 150,
         rectanguloy: 195,
 
@@ -196,10 +214,10 @@ const barbequeOptions = [
         rescuadradox: 610,
         rescuadradoy: 235,
 
-        resLheight: 100,
-        resLwidth: 100,
-        resLx: 450,
-        resLy: 265,
+        resLheight: 600,
+        resLwidth: 600,
+        resLx: 380,
+        resLy: 0,
 
         resrectanguloheight: 100,
         resrectangulowidth: 110,
