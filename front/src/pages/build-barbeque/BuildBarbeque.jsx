@@ -102,10 +102,10 @@ export const BuildBarbeque = () => {
 
     return (
         <div className={`${ currentStep === 0 ? 'build-container' : 'white-background' }`}>
-            <div className="header">
+        { !isLoading && <div  className="header">
                 <h1 className="select-text">Selecciona tu</h1>
                 <span className="step-title">{stepTitles[currentStep]}</span>
-            </div>
+            </div>}
 
             { currentStep === 0 && !isLoading && <ChooseRoom room={room} decrementBudget={decrementBudget} setRoom={setRoom} nextStep={nextStep} /> }
             { currentStep === 1 && !isLoading && <ChooseEnvironment room={room} decrementBudget={decrementBudget} setEnvironmentMaterials={setEnvironmentMaterials} environmentMaterials={environmentMaterials} nextStep={nextStep}/> }

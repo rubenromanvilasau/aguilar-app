@@ -3,10 +3,11 @@ import './results-page.scss';
 import QRCode from 'react-qr-code';
 import apiService from '../../services/api.service';
 import { useNavigate, useParams } from 'react-router-dom';
-
+import { Loading } from '../../components/loading/Loading';
 
 export const ResultsPage = () => {
     const [image, setImage] = useState(null);
+    const [isLoading, setIsLoading] = useState(true);
     const navigate = useNavigate();
 
     const { id } = useParams();
@@ -22,6 +23,7 @@ export const ResultsPage = () => {
 
         console.log('url', url);
         setImage( url );
+        setIsLoading( false );
     }
 
     useEffect(() => {
@@ -35,6 +37,12 @@ export const ResultsPage = () => {
         return () => clearTimeout(timer);
     },[]);
 
+    if( isLoading ) {
+        return (
+        <div className='results-container'>
+            <Loading />
+        </div>)
+    }
 
     return (
         <div className='results-container'>
