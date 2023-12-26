@@ -3,7 +3,7 @@ import axios from 'axios';
 class apiService {
 
     constructor() {
-        this.url = 'http://34.125.42.129:3000/api';
+        this.url = 'http://34.125.42.229:3000/api';
     }
 
     async get(endpoint) {
