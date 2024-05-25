@@ -54,7 +54,7 @@ export const ResultsPage = () => {
                     <QRCode
                         size={256}
                         style={{ height: "auto", maxWidth: "100%", width: "100%" }}
-                        value={`http://34.125.42.229:3000/download-image/${id}`}
+                        value={`${import.meta.env.BACKEND_URI}/download-image/${id}`}
                         viewBox={`0 0 256 256`}
                     />
                 </div>

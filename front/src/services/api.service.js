@@ -3,14 +3,15 @@ import axios from 'axios';
 class apiService {
 
     constructor() {
-        this.url = 'http://34.125.42.229:3000/api';
+      console.log('import.meta.env.BACKEND_URI', import.meta.env.VITE_BACKEND_URI);
+        this.url = import.meta.env.VITE_BACKEND_URI;
     }
 
     async get(endpoint) {
         return axios(`${this.url}/${endpoint}`)
     }
 
-    async creatUser( data ) {
+    async createUser( data ) {
         return axios.post(`${this.url}/users`, data);
     }
 

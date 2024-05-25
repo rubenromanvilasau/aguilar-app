@@ -20,7 +20,7 @@ export const Home = () => {
 
     if( !validateInputs( { name, email, phone } ) ) return;
 
-    apiService.creatUser( { name, email, phone: phone } ).then( response => {
+    apiService.createUser( { name, email, phone: phone } ).then( response => {
       console.log('response', response);
       navigate('/build');
     });
